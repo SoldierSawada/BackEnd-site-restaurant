@@ -1,0 +1,14 @@
+{
+  "name": "ddd",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/tools/ddd/src",
+  "projectType": "library",
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p packages/tools/ddd/tsconfig.json"
+      }
+    }
+  }
+}

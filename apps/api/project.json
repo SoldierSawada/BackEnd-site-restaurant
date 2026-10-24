@@ -1,0 +1,32 @@
+{
+  "name": "restaurant-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/api/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nodemon --watch apps/api/src --watch packages --ext ts --exec \"ts-node -T -r tsconfig-paths/register apps/api/src/main.ts\""
+      }
+    },
+    "demo": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ts-node -T -r tsconfig-paths/register apps/api/src/demo.ts"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc -p apps/api/tsconfig.app.json"
+      }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p apps/api/tsconfig.app.json"
+      }
+    }
+  }
+}

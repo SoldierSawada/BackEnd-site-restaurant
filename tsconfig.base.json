@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": [
+      "ES2022"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "paths": {
+      "ddd": [
+        "packages/tools/ddd/src/index.ts"
+      ],
+      "messages-core": [
+        "packages/tools/messages/src/index.ts"
+      ],
+      "restaurant-core": [
+        "packages/restaurant/core/src/index.ts"
+      ],
+      "restaurant-messages": [
+        "packages/restaurant/messages/src/index.ts"
+      ],
+      "restaurant-adapters": [
+        "packages/restaurant/adapters/index.ts"
+      ],
+      "restaurant-api": [
+        "apps/api/src/index.ts"
+      ]
+    }
+  }
+}

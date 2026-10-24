@@ -1,0 +1,14 @@
+{
+  "name": "restaurant-messages",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/booking/messages/src",
+  "projectType": "library",
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p packages/restaurant/messages/tsconfig.json"
+      }
+    }
+  }
+}

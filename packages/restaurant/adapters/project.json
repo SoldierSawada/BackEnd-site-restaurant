@@ -1,0 +1,14 @@
+{
+  "name": "restaurant-adapters",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/restaurant/adapters/src",
+  "projectType": "library",
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p packages/restaurant/adapters/tsconfig.json"
+      }
+    }
+  }
+}

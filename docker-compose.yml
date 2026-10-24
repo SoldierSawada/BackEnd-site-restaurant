@@ -1,0 +1,17 @@
+# Base PostgreSQL pour le back-end (DB_TYPE=postgres).
+# Lancement : docker compose up -d
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: restaurant-postgres
+    environment:
+      POSTGRES_USER: restaurant
+      POSTGRES_PASSWORD: restaurant
+      POSTGRES_DB: restaurant
+    ports:
+      - "5432:5432"
+    volumes:
+      - restaurant-pgdata:/var/lib/postgresql/data
+
+volumes:
+  restaurant-pgdata:

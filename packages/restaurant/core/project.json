@@ -1,0 +1,14 @@
+{
+  "name": "restaurant-core",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/restaurant/core/src",
+  "projectType": "library",
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p packages/restaurant/core/tsconfig.json"
+      }
+    }
+  }
+}

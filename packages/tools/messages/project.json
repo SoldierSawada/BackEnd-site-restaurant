@@ -1,0 +1,14 @@
+{
+  "name": "messages-core",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/tools/messages/src",
+  "projectType": "library",
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p packages/tools/messages/tsconfig.json"
+      }
+    }
+  }
+}
